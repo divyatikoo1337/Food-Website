@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #ebfbee; */
+}
+
+body{
+    /* background-image: url('https://restaurantengine.com/wp-content/uploads/2018/05/Why-Your-Website-Needs-The-Same-Atmosphere-As-Your-Restaurant.jpg'); */
+    font-family: 'Rubik', sans-serif;
+    /* background-size: 75% 25%; */
+    /* background-size: cover; */
+
+}
+
+
+.full-page
+        {
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.59),rgba(0, 0, 0, 0.7)),url('https://restaurantengine.com/wp-content/uploads/2018/05/Why-Your-Website-Needs-The-Same-Atmosphere-As-Your-Restaurant.jpg');
+
+            max-width: 100%;
+            background-size: cover;
+            /* position: absolute; */
+            background-position: center;
+          
+        }
+        .navbar
+        {
+            display: flex;
+            align-items: center;
+            padding-left: 3.5rem;
+            padding-right: 2.5rem;
+            /* padding-top:25px; */
+            font-family: 'Homemade Apple', cursive;
+            
+        }
+        nav
+        {
+            flex: 1;
+            text-align: right;
+        }
+        nav ul 
+        {
+            display: inline-block;
+            list-style: none;
+        }
+        nav ul li
+        {
+            display: inline-block;
+            margin-right: 3rem;
+        }
+        nav ul li a
+        {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Rubik', sans-serif;
+            /* color: rgba(230, 222, 222, 0.77); */
+            color: #ebfbee;
+        }
+
+        .heading{
+            margin-top: 8rem;
+            color: #ebfbee;
+        }
+
+        .heading h1{
+            margin-left: 17rem;
+            margin-bottom: 0.5rem;
+            /* letter-spacing: -1; */
+            /* margin-left: auto;
+            margin-right: auto; */
+            font-size: 3.5rem;
+        }
+        .heading h3{
+            margin-left: 33rem;
+            margin-bottom: 10rem;
+            
+        }
+
+        .table-btn{
+            padding: 1rem;
+            background-color: #137a5e;
+            margin-left: 33rem;
+            margin-right: 36.5rem;
+            border-radius: 1rem;
+            margin-bottom: 11.5rem;
+
+            /* padding: 2.5%;
+            background-color: #137a5e;
+            color: #ffffff;
+            width: 20%;
+            text-decoration: none;
+            border-radius: 4%;
+            font-size: 16px; */
+        }
+
+        .table-btn:hover{
+            background-color: #099268;
+        }
+
+        .table-btn a{
+            color: #ebfbee;
+            text-decoration: none;
+        }
+
+        
+
+        .about-us h2{
+            color: #137a5e;
+            font-size: 2.5rem;
+            margin-left: 2rem;
+            display: inline;     
+            background-color: #ebfbee;  
+        }
+
+        .about-us{
+            background-color: #ebfbee;
+            padding-top: 2rem;
+            padding-bottom: 0;
+        }
+
+        .au{
+            background-color: #ebfbee;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .para p{
+            font-size: 1.1rem;
+            /* letter-spacing: -1px; */
+            margin-top: 2rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+            margin-left: 1.3rem;
+        }
+
+        .img2{
+            padding: 0;
+            margin: 0;
+            display: inline;
+            align-items: center;
+            margin-left: 5rem;
+        }
+
+        .map{
+            padding: 1rem;
+            background-color: rgb(0, 0, 0);
+            /* border: black solid 0.2rem; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .pa{
+            /* grid-column: auto; */
+            display: grid;
+            color: #ebfbee;
+            grid-template-rows: 90% 10%;
+            align-items: end;
+            justify-content: center;
+            
+            /* grid-row-end: 2; */
+        }
+
+        .contact{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* column-gap: 1rem; */
+            background-color: black;
+            padding-top: 1.5rem;
+        }
+
+        .name {
+            font-family: 'Homemade Apple', cursive;
+            color: #137a5e;
+            padding-top: 0.25rem;
+            padding-left: 0.7rem;
+        }
+
+        .one a{
+            padding-left: 1rem;
+            border-radius: 1rem;
+            
+        }
