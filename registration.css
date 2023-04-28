@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #ebfbee; */
+}
+
+body{
+    /* background-image: url('https://restaurantengine.com/wp-content/uploads/2018/05/Why-Your-Website-Needs-The-Same-Atmosphere-As-Your-Restaurant.jpg'); */
+    font-family: 'Rubik', sans-serif;
+    /* background-size: 75% 25%; */
+    /* background-size: cover; */
+    background-color: #ebfbee;
+
+}
+
+        .left
+        {
+            display: flex;
+            align-items: center;
+            padding-left: 3.5rem;
+            padding-right: 2.5rem;
+            padding-bottom: 40rem;
+            /* padding-top:25px; */
+            font-family: 'Homemade Apple', cursive;
+            background-image: url('https://bestanimations.com/Food/food-animated-gif-18.gif');
+            /* background-image: linear-gradient(black, rgba(0, 0, 0, 0.264), url('https://bestanimations.com/Food/food-animated-gif-18.gif')); */
+        }
+        /* nav
+        {
+            flex: 1;
+            text-align: right;
+        }
+        nav ul 
+        {
+            display: inline-block;
+            list-style: none;
+        }
+        nav ul li
+        {
+            display: inline-block;
+            margin-right: 3rem;
+        }
+        nav ul li a
+        {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Rubik', sans-serif;
+            color: #137a5e;
+        } */
+
+        .full-page{
+            display: grid;
+            grid-template-columns: 500px auto;
+        }
+
+
+        .right h1{
+            padding: 2rem;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .form-floating{
+            padding: 0.5rem;
+            /* padding-left: 10rem; */
+        }
+
+        .form-control{
+            padding: 1rem;
+            width: 25rem;
+            border-radius: 0.5rem;
+        }
+
+        .right{
+            justify-items: center;
+            padding: auto;
+            /* display: flex; */
+        }
+
+        .right button{
+            padding: 1rem;
+            margin-top: 3rem;
+            background-color: #137a5e;
+            border-radius: 0.5rem;
+            width: 12rem;
+            font-size:1.3rem;
+        }
+
+        

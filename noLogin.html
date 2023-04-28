@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Cofirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <div class="full-page">
+      <div class="navbar">
+        <h2 style="color:  #137a5e; font-family: 'Homemade Apple', cursive;  margin-left: 10px; font-size: 50px;">spicelane</h2>
+        <nav>
+          <ul id='MenuItems'>
+            <li><a href="index.html">Home</a></li>
+            <li><a href='menu.html'>Menu</a></li>
+            <li><a href='reservation.html'>Table Booking</a></li>
+            <li><a href="cart.php">Orders</a></li>
+            <li><a href='login.html'>Login</a></li>
+            <li><a href="logout.php">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <center>
+        <h1 style="font-size: 3rem; margin: 7rem 0; color: #ebfbee;">Sorry! Login first to logout.</h1>
+        <div>
+            <a style=" color: #ebfbee; text-decoration: none; padding: 1rem 2.6rem; background-color: #137a5e; border-radius: 1rem;" href="login.html">Login</a>
+            <a style=" color: #ebfbee; text-decoration: none; margin-left: 3rem; padding: 1rem 3rem; background-color: #137a5e; border-radius: 1rem; " href="index.html">Home Screen</a>
+        </div>
+        </center>
+      </div>
+      
+</body>
+</html>
+
+<style>
+    /* .main{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    } */
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+.full-page
+        {
+            padding-bottom: 31.5rem;
+            /* padding: 0.8rem; */
+            max-width: 100%;
+            background-size: cover;
+            background-position: center;
+            /* background-color: #ebfbee; */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.59),rgba(0, 0, 0, 0.7)),url('https://restaurantengine.com/wp-content/uploads/2018/05/Why-Your-Website-Needs-The-Same-Atmosphere-As-Your-Restaurant.jpg');
+
+          
+        }
+        .navbar
+        {
+            display: flex;
+            align-items: center;
+            padding-left: 3.5rem;
+            padding-right: 2.5rem;
+            font-family: 'Homemade Apple', cursive;
+            
+        }
+        nav
+        {
+            flex: 1;
+            text-align: right;
+        }
+        nav ul 
+        {
+            display: inline-block;
+            list-style: none;
+        }
+        nav ul li
+        {
+            display: inline-block;
+            margin-right: 3rem;
+        }
+        nav ul li a
+        {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Rubik', sans-serif;
+            color: #ebfbee;
+        }
+</style>

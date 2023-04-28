@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #ebfbee; */
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url('https://restaurantengine.com/wp-content/uploads/2018/05/Why-Your-Website-Needs-The-Same-Atmosphere-As-Your-Restaurant.jpg'); */
+    font-family: 'Rubik', sans-serif;
+    /* background-size: 75% 25%; */
+    /* background-size: cover; */
+
+}
+
+
+.full-page
+        {
+            padding-bottom: 1.6rem;
+            height: 100%;
+            /* background-image: linear-gradient(rgba(0, 0, 0, 0.59),rgba(0, 0, 0, 0.7)),url('https://restaurantengine.com/wp-content/uploads/2018/05/Why-Your-Website-Needs-The-Same-Atmosphere-As-Your-Restaurant.jpg'); */
+
+            max-width: 100%;
+            background-size: cover;
+            /* position: absolute; */
+            background-position: center;
+          background-color: #ebfbee;
+        }
+        .navbar
+        {
+            display: flex;
+            align-items: center;
+            padding-left: 3.5rem;
+            padding-right: 2.5rem;
+            /* padding-top:25px; */
+            font-family: 'Homemade Apple', cursive;
+            
+        }
+        nav
+        {
+            flex: 1;
+            text-align: right;
+        }
+        nav ul 
+        {
+            display: inline-block;
+            list-style: none;
+        }
+        nav ul li
+        {
+            display: inline-block;
+            margin-right: 3rem;
+        }
+        nav ul li a
+        {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Rubik', sans-serif;
+            /* color: rgba(230, 222, 222, 0.77); */
+            color: #000000;
+        }
+
+        .inside{
+            display: grid;
+            grid-template-columns: 1.4fr 1.1fr;
+        }
+        .img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .form-floating{
+            margin: 1rem;
+        }
+
+        .form-control{
+            width: 20rem;
+            height: 3rem;
+            background-color: #ebfbee;
+            border: #000000 solid 1px;
+            border-radius: 10px;
+            padding: 0.5rem;
+        }
+
+    
+
+       .reserve{
+        margin-top: 3rem;
+        width: 10rem;
+        height:3rem;
+        background-color: #137a5e;
+        color: #ebfbee;
+        border-radius: 1rem;
+       }
+
+       .date{
+        width: 8.5rem;
+        height: 2.3rem;
+        margin-top: 1rem;
+        border-radius: 0.3rem;
+        /* border: black 1px solid; */
+    }
+

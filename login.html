@@ -13,33 +13,39 @@
 <body>
 
     <script>
-        email = document.querySelector('#floatingInput').value;
-        pass = document.querySelector('#floatigPassword').value;
-        var mailFormat= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        document.querySelector('.btn').addEventListener(
-            'click', function(email, pass){
-                if(email.match(mailFormat)){
-                    console.log("Works");
-                }else{
-                    console.log('ot correct');
-                }
-            }
-        )
+
+        function validate(){
+            var mailFormat= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            var email = document.getElementById("name"); 
+        var pass = document.getElementById("password"); 
+
+        if(email.value == ""){
+            alert("Enter the email ID");
+        }
+        if(pass.value==""){
+            alert("Enter the Password");
+        }
+        // if(!(pass.value.match(mailFormat))){
+        //     alert("Wrong email format.");
+        // }
+        }
+
     </script>
 
     <div class="full-page">
         <div class="navbar">
-                <!-- <img src="file:///Users/DT/Documents/Screenshot%202023-02-21%20at%204.49.29%20PM.png" alt="Logo" width="87" height="70" class="d-inline-block align-text-top" style="float: left; border-radius: 10px;"> -->
                 <h2 style="color:  #40c057; font-family: 'Homemade Apple', cursive;  margin-left: 10px; margin-top: 20px; font-size: 50px;">spicelane</h2>
-                <!-- <img src="file:///Users/DT/Desktop/Screenshot%202023-02-24%20at%207.09.36%20PM.png" alt="SPICELANE" height="70" width="350"> -->
                 <nav>
-                <ul id='MenuItems'>
-                    <li><a href="/Users/DT/sample site/index.html">Home</a></li>
-                    <li><a href='/Users/DT/sample site/menu.html'>Menu</a></li>
-                    <li><a href='#'>Order</a></li>
-                    <li><a href='#/Users/DT/sample site/login.html'>Login</a></li>
-                    <!-- <li><button class='loginbtn'  onclick="document.getElementById('login-           form').style.display='block'" style="width:auto; background-color: rgba(0, 0, 0, 0.342); color: white;">Login</button></li> -->
-                </ul>
+          <ul id='MenuItems'>
+            <li><a href="index.html">Home</a></li>
+            <li><a href='menu.html'>Menu</a></li>
+            <li><a href='reservation.html'>Table Booking</a></li>
+            <li><a href="cart.php">Orders</a></li>
+            <li><a href='login.html'>Login</a></li>
+            <li><a href="logout.php">Logout</a></li>
+          </ul>
+        </nav>
             </nav>
         </div>
             
@@ -47,29 +53,19 @@
             <center>
                 <h3 style="color:#ebfbee; margin-bottom: 20px;">Welcome Back</h3>
         <div class="div1">
-            <form action="" method="post">
-                <!-- FirstName:<br>
-                <input type="text" name="first_name" style="border-radius: 10px; color: rgb(124, 131, 137);">
-                <br>
-                LastName:<br>
-                <input type="text" name="last_name" style="border-radius: 10px; ">  -->
-                <!-- UserName:<br>
-                <input type="text" name="UserName" style="border-radius: 10px; height: 40px; "><br>
-                Password:<br>
-                <input type="password" name="password" style="border-radius: 10px; height: 40px; ">
-                <br> -->
-                <div class="form-floating mb-3">
-                    <input style="background-color: rgba(0, 0, 0, 0.2);" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label  style="background-color: rgba(0, 0, 0, 0.2);" for="floatingInput" >Email address</label>
+            <form onsubmit="validate()" action="login.php" method="post">
+                  <div class="form-floating">
+                    Email ID
+                    <input type="email" name="email" class="form-control" id="name" placeholder=" Email ID" required>
                   </div>
                   <div class="form-floating">
-                    <input style="background-color: rgba(0, 0, 0, 0.2);" type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label style="background-color: rgba(0, 0, 0, 0.2); margin-bottom: 0px;" for="floatingPassword">Password</label>
+                    Password
+                    <input type="password" name="password" class="form-control" id="password" placeholder=" Password" required>
                   </div>
-                  <button class="btn">Next</button>
+                  <button onclick="validate()" class="btn">Next</button>
                   <br><br>
-                  <h5 style="color: #ebfbee; font-size: small;">Forgot Password?</h5>
-                  <h4 style="color: #40c057;">Not Registered? Sign Up Now!</h4>
+                  <a style="color: #ebfbee; font-size: small; text-decoration: none;" href="admin.html">Admin? Click Here</a><br>
+                  <a style="color: #40c057; text-decoration: none;" href="registration4.php">Not Registered? Sign Up Now!</a><br><br>
             <br>
             </form>
         </div>
@@ -79,12 +75,16 @@
 
 
     <style>
+        ::placeholder{
+            color: #000000;
+        }
+
         .btn{
             color: aliceblue;
             background-color: #37b24d;
             padding: 5px;
+            margin-top: 2rem;
             width: 100px;
-            /* margin-left: 200px; */
         }
         *
         {
@@ -92,17 +92,13 @@
             padding: 0;
             box-sizing: border-box;
         }
-
-        .form-control{
-            border: #ebfbee solid;
-        }
          
         .form-floating {
             width: 300px;
-            height: 40px;
-            margin: 40px;
+            height: 30px;
+            margin: 50px;
             /* color: rgb(201, 232, 232); */
-            color: #ebfbee;
+            /* color: #000000; */
         }
         
 
@@ -110,6 +106,8 @@
             border: #ebfbee solid 0.5px;
             width: fit-content;
             border-radius: 10px;
+            /* margin: 1rem; */
+            color: rgb(255, 255, 255);
         }
 
         .full-page

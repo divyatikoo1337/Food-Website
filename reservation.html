@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Book a table with Us</title>
+</head>
+<body>
+
+    <script>
+
+      // var form = document.getElementById("form");
+
+      // form.addEventListener('submit', (e) => {
+      // e.preventDefault()
+
+      // validate();
+      // });
+
+     function validate(){
+      var name = document.getElementById("name");
+      var number = document.getElementById("number");
+      var email = document.getElementById("email");
+      var mailFormat= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      var date = document.getElementById("date");
+
+      if(name.value == ""){
+        alert("Please enter a Name");
+      }
+      if(number.value == "" || (number.value).toString().length<10 || (number.value).toString().length>10 ){
+        alert("Please enter a valid Number");
+      }
+      if(email.value == "" || !(email.value.match(mailFormat))){
+        alert("Please enter a Mail Id in the correct format");
+      }
+     if(date.value == "" ){
+        alert("Please enter  the date");
+      }
+    }
+
+    </script>
+
+    <section>
+
+    <div class="full-page">
+      <div class="navbar">
+        <h2 style="color:  #137a5e; font-family: 'Homemade Apple', cursive;  margin-left: 10px; font-size: 50px;">spicelane</h2>
+        <nav>
+          <ul id='MenuItems'>
+            <li><a href="index.html">Home</a></li>
+            <li><a href='menu.html'>Menu</a></li>
+            <li><a href='reservation.html'>Table Booking</a></li>
+            <li><a href="cart.php">Orders</a></li>
+            <li><a href='login.html'>Login</a></li>
+            <li><a href="logout.php">Logout</a></li>
+            <!-- <button onclick="logout.php">Logout</button> -->
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="inside">
+        <div class="left">
+            <form id="form" method="post" action="reservation.php">
+            <center>
+                <br>
+                <h1>Table Reservation</h1><br>
+                <div class="form-floating">
+                    <input type="text" name="name" class="form-control" id="name" placeholder=" Name">
+                </div>
+                 <div class="form-floating">
+                    <input type="email" name="email" class="form-control" id="email" placeholder=" Email ID">
+                </div>
+                <div class="form-floating">
+                    <input type="number" name="number" class="form-control" id="number" placeholder=" Phone Number">
+                </div>
+                
+                <div class="people">
+                    <label name="people" for="People">No of People:</label>
+                    <select name="people" class="l" id="people">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <input class="date" name="date" type="date" id="date" placeholder="Date">
+                </div>
+                <div>
+                    <button type="submit" onclick="validate()" class="reserve">Reserve</button>
+                </div>
+            </center>
+            </form>
+        </div>
+        <div class="right">
+            <img class="img" src="book5.png" alt="food img">
+        </div>
+    </div>
+      
+    </div>
+    
+  </section>
+</body>
+</html>
