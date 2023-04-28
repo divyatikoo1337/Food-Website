@@ -1,19 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- #FFC -->
-    <!-- 76CDD7 -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Menu</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet"  href="css/bootstrap.css" > -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Users/DT/sample site/menu.css">
+    <link rel="stylesheet" href="menu.css">
     <script src="js/bootstrap.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -24,34 +19,19 @@
 
     <div class="full-page">
         <div class="navbar">
-            <!-- <img src="file:///Users/DT/Documents/Screenshot%202023-02-21%20at%204.50.47%20PM.png" alt="Logo" width="87" height="70" class="d-inline-block align-text-top" style="float: left; border-radius: 50px;"> -->
             <h2 style="color:  #137a5e;  margin-left: 10px; font-size: 50px;">spicelane</h2>
-            <!-- <img src="file:///Users/DT/Documents/Screenshot%202023-02-21%20at%204.52.33%20PM.png" alt="SPICELANE" height="70" width="350"> -->
                 <nav>
-                <ul id='MenuItems'>
-                    <li><a href="/Users/DT/sample site/index.html">Home</a></li>
-                    <li><a href='/Users/DT/sample site/menu.html'>Menu</a></li>
-                    <li><a href='#'>Order</a></li>
-                    <li><a href='/Users/DT/sample site/login.html'>Login</a></li>
-                </ul>
-                
-            </nav>
+                  <ul id='MenuItems'>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href='menu.html'>Menu</a></li>
+                    <li><a href='reservation.html'>Table Booking</a></li>
+                    <li><a href="cart.php">Orders</a></li>
+                    <li><a href='login.html'>Login</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                    <!-- <button onclick="logout.php">Logout</button> -->
+                  </ul>
+              </nav>
         </div>
-
-      
-
-        <!-- <div class="grid-container">
-            <img src="https://zenfoods.com/wp-content/uploads/2018/04/blog-vegetarian-diet-1500px.jpg" class="item one" height="200" width="200" >
-            <h2 class="item two">Vegetarian Food!</h2>
-        </div>
-        <div class="grid-container">
-            <h2 class="item two" > Non-Vegetarian Food!</h2>
-            <img src="https://assets.londonist.com/uploads/2016/07/i875/fischer-s_avocado_vegetable_and_superfoods_salad_1.jpg" class="item one" height="200" width="200" >
-        </div>
-        <div class="grid-container">
-            <img src="https://zenfoods.com/wp-content/uploads/2018/04/blog-vegetarian-diet-1500px.jpg" height="200" width="200" class="item one" >
-            <h2 class="item two">Vegan!</h2>
-        </div> -->
 
         <div class="header">
             <div class="header left">
@@ -77,109 +57,114 @@
                 </div>
         </div>
 
-        
 
         <div class="container grid grid--3--cols">
-          <figure class="food">
-            <img src="https://media.boingboing.net/wp-content/uploads/2019/07/screenshot-77.jpg" alt="food" height="170" width="260">
+            <form method="post" action="menu.php" method="post">
+                <figure class="food">
+                    <input type="hidden" name="dish_name" value="Pesto Pasta">
+                    <input type="hidden" name="dish_price" value="1500">
+                    <img src="https://media.boingboing.net/wp-content/uploads/2019/07/screenshot-77.jpg" alt="food" height="170" width="260">
+                    <div class="food-box">
+                        <h3>Pesto Pasta</h3>
+                        <ul class="food-details">
+                            <li>
+                                <span><ion-icon class="meal-icon" name="ellipse-outline"></ion-icon>Vegetarian</span>
+                            </li>
+                            <li>
+                                <span><ion-icon class="meal-icon" name="person-outline"></ion-icon>For 2</span>
+                            </li>
+                            <li>
+                                <span><ion-icon class="meal-icon" name="flame"></ion-icon>500 kcal</span>
+                            </li>
+                        </ul>
+                        <div class="food-price">
+                            <strong>1500 Rs</strong>
+                            <input type="submit" class="btn--small" name="addToCart" value="Buy Now">
+                            
+                        </div>
+                    </div>
+                </figure>
+            </form>
+            <form method="post" action="menu.php" method="post">
+          <figure class="food" >
+            <input type="hidden" name="dish_name" value="Steak">
+                    <input type="hidden" name="dish_price" value="2500">
+            <img src="steak.jpg" alt="food" height="170" width="260">
             <div class="food-box">
-              <h3>Pesto Pasta</h3>
+              <h3>Steak </h3>
               <ul class="food-details">
                 <li>
-                  <span><ion-icon class="meal-icon" name="ellipse-outline"></ion-icon>Vegetarian</span>
+                  <span><ion-icon class="meal-icon" name="ellipse-outline"></ion-icon>Non-Vegetarian</span>
                 </li>
                 <li>
-                  <span><ion-icon class="meal-icon" name="person-outline"></ion-icon>For 2</span>
+                  <span><ion-icon class="meal-icon" name="person-outline"></ion-icon>For 1</span>
                 </li>
                 <li>
-                  <span><ion-icon class="meal-icon" name="flame"></ion-icon>700 kcal</span>
+                  <span><ion-icon class="meal-icon" name="flame"></ion-icon>1000 kcal</span>
                 </li>
-                <!-- <li>
-                  <span>Weighs 16 kg</span>
-                </li> -->
               </ul>
               <div class="food-price">
                 <strong>2500 Rs</strong>
-                <a href="#" class="btn btn--small">Add to cart</a>
+                <input type="submit" class="btn--small" name="addToCart" value="Buy Now">
               </div>
             </div>
-          </figure>
-          <figure class="food">
-            <img src="https://media.boingboing.net/wp-content/uploads/2019/07/screenshot-77.jpg" alt="food" height="170" width="260">
-            <div class="food-box">
-              <h3>Pesto Pasta</h3>
-              <ul class="food-details">
-                <li>
-                  <span><ion-icon class="meal-icon" name="ellipse-outline"></ion-icon>Vegetarian</span>
-                </li>
-                <li>
-                  <span><ion-icon class="meal-icon" name="person-outline"></ion-icon>For 2</span>
-                </li>
-                <li>
-                  <span><ion-icon class="meal-icon" name="flame"></ion-icon>700 kcal</span>
-                </li>
-                <!-- <li>
-                  <span>Weighs 16 kg</span>
-                </li> -->
-              </ul>
-              <div class="food-price">
-                <strong >2500 Rs</strong>
-                <a href="#" class="btn btn--small">Add to cart</a>
-              </div>
-            </div>
-          </figure>
-          <figure class="food">
-            <img src="https://media.boingboing.net/wp-content/uploads/2019/07/screenshot-77.jpg" alt="food" height="170" width="260">
-            <div class="food-box">
-              <h3>Pesto Pasta</h3>
-              <ul class="food-details">
-                <li>
-                  <span>Vegetarian</span>
-                </li>
-                <li>
-                  <span><ion-icon class="meal-icon" name="person-outline"></ion-icon>For 2</span>
-                </li>
-                <li>
-                  <span><ion-icon class="meal-icon" name="flame"></ion-icon>700 kcal</span>
-                </li>
-              </ul>
-                <div class="food-price">
-                <strong>2500 Rs</strong>
-                <a href="#" class="btn btn--small">Add to cart</a>
-              </div>
-            
-            </div>
-          </figure>
-          <figure class="food">
-            <img src="https://media.boingboing.net/wp-content/uploads/2019/07/screenshot-77.jpg" alt="food" height="170" width="260">
-            <div class="food-box">
-              <h3>Pesto Pasta</h3>
-              <ul class="food-details">
-                <li>
-                  <span>Vegetarian</span>
-                </li>
-                <li>
-                  <span><ion-icon class="meal-icon" name="person-outline"></ion-icon>For 2</span>
-                </li>
-                <li>
-                  <span><ion-icon class="meal-icon" name="flame"></ion-icon>700 kcal</span>
-                </li>
-                <!-- <li>
-                  <span>Weighs 16 kg</span>
-                </li> -->
-              </ul>
-              <div class="food-price">
-                <strong>2500 Rs</strong>
-                <a href="#" class="btn btn--small">Add to cart</a>
-              </div>
-            </div>
-          </figure>
+          </figure> 
+          </form>
 
-          <br><br><br>
-          
+            <form method="post" action="menu.php" method="post">
+          <figure class="food">
+            <input type="hidden" name="dish_name" value=" Biryani">
+                    <input type="hidden" name="dish_price" value="1000">
+            <img src="biryani.jpg" alt="food" height="170" width="260">
+            <div class="food-box">
+              <h3> Biryani</h3>
+              <ul class="food-details">
+                <li>
+                  <span><ion-icon class="meal-icon" name="ellipse-outline"></ion-icon>Vegetarian</span>
+                </li>
+                <li>
+                  <span><ion-icon class="meal-icon" name="person-outline"></ion-icon>For 2</span>
+                </li>
+                <li>
+                  <span><ion-icon class="meal-icon" name="flame"></ion-icon>1000 kcal</span>
+                </li>
+              </ul>
+              <div class="food-price">
+                <strong>1000 Rs</strong>
+                <input type="submit" class="btn--small" name="addToCart" value="Buy Now">
+              </div>
+            </div>
+          </figure>
+          </form>
+
+            <form method="post" action="menu.php" method="post">
+          <figure class="food">
+            <input type="hidden" name="dish_name" value=" Fish">
+                    <input type="hidden" name="dish_price" value="1000">
+            <img src="Fish.jpg" alt="food" height="170" width="260">
+            <div class="food-box">
+              <h3>Fish</h3>
+              <ul class="food-details">
+                <li>
+                  <span><ion-icon class="meal-icon" name="ellipse-outline"></ion-icon>Vegetarian</span>
+                </li>
+                <li>
+                  <span><ion-icon class="meal-icon" name="person-outline"></ion-icon>For 1</span>
+                </li>
+                <li>
+                  <span><ion-icon class="meal-icon" name="flame"></ion-icon>700 kcal</span>
+                </li>
+              </ul>
+              <div class="food-price">
+                <strong>1000 Rs</strong>
+                <input type="submit" class="btn--small" name="addToCart" value="Buy Now">
+              </div>
+            </div>
+          </figure>
+          </form>
         </div>
     </div>
-    
+    <br><br>
     
 </body>
 
